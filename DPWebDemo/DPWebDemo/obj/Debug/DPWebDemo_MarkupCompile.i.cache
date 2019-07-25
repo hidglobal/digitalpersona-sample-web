@@ -1,0 +1,20 @@
+﻿DPWebDemo
+
+
+winexe
+C#
+.cs
+\\rwc-eng-01\Common\SW - Release\DP\Altus\2.1.0\RTM\DP Access Mgmt API 2.1.0\DP Web SDK Samples\DPWebDemo\DPWebDemo\obj\Debug\
+DPWebDemo
+none
+false
+DEBUG;TRACE
+\\rwc-eng-01\Common\SW - Release\DP\Altus\2.1.0\RTM\DP Access Mgmt API 2.1.0\DP Web SDK Samples\DPWebDemo\DPWebDemo\App.xaml
+6-1931567286
+
+15-2038558240
+22979251413
+AuthenticateCredentialsWindow.xaml;EnrollCredentialsWindow.xaml;MainWindow.xaml;SecretTestControl.xaml;WebAuthTestControl.xaml;WebEnrollmentTestControl.xaml;
+
+True
+

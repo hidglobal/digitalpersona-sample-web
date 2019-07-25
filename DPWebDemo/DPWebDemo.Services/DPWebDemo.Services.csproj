@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4BE5454-181E-4A4A-A453-55D9EDED87C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DPWebDemo.Services</RootNamespace>
+    <AssemblyName>DPWebDemo.Services</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile7</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\UserAttribute.cs" />
+    <Compile Include="Attributes\UserAttributeAction.cs" />
+    <Compile Include="Attributes\UserAttributeType.cs" />
+    <Compile Include="Card\CardAuthenticationtData.cs" />
+    <Compile Include="Card\CardEnrollmentData.cs" />
+    <Compile Include="Core\Base64UrlConverter.cs" />
+    <Compile Include="Core\BodyParameter.cs" />
+    <Compile Include="Credentials\IAuthenticationCredential.cs" />
+    <Compile Include="Credentials\IEnrollmentCredential.cs" />
+    <Compile Include="Fingerprints\FingerprintAuthenticationData.cs" />
+    <Compile Include="Fingerprints\FingerprintDataHeader.cs" />
+    <Compile Include="Fingerprints\FingerprintDataType.cs" />
+    <Compile Include="Fingerprints\FingerprintImage.cs" />
+    <Compile Include="Fingerprints\FingerprintImageColorRepresantation.cs" />
+    <Compile Include="Fingerprints\FingerprintImageCompression.cs" />
+    <Compile Include="Fingerprints\FingerprintImageFormat.cs" />
+    <Compile Include="Fingerprints\FingerprintImagePadding.cs" />
+    <Compile Include="Fingerprints\FingerprintImagePolarity.cs" />
+    <Compile Include="Fingerprints\FingerprintImageType.cs" />
+    <Compile Include="LiveQuestion\LiveQuestionAuthenticationData.cs" />
+    <Compile Include="LiveQuestion\LiveQuestionAnswer.cs" />
+    <Compile Include="LiveQuestion\LiveQuestionEnrollmentData.cs" />
+    <Compile Include="OneTimePassword\OtpAuthenticationData.cs" />
+    <Compile Include="OneTimePassword\OtpEnrollmentData.cs" />
+    <Compile Include="Password\PasswordAuthenticationData.cs" />
+    <Compile Include="Pin\PinAuthenticationData.cs" />
+    <Compile Include="Pin\PinEnrollmentData.cs" />
+    <Compile Include="Services\EnrollmentInformationService.cs" />
+    <Compile Include="Core\HttpHelper.cs" />
+    <Compile Include="Core\RequestMethod.cs" />
+    <Compile Include="Core\ServiceException.cs" />
+    <Compile Include="Credentials\Credential.cs" />
+    <Compile Include="Password\PasswordEnrollmentData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\ErrorData.cs" />
+    <Compile Include="Services\AuthenticationService.cs" />
+    <Compile Include="Biometric\BiometricFactors.cs" />
+    <Compile Include="Biometric\BiometricFormatOwner.cs" />
+    <Compile Include="Biometric\BiometricSample.cs" />
+    <Compile Include="Biometric\BiometricSampleEncryption.cs" />
+    <Compile Include="Biometric\BiometricSampleFormat.cs" />
+    <Compile Include="Biometric\BiometricSampleHeader.cs" />
+    <Compile Include="Biometric\BiometricSampleHeaderType.cs" />
+    <Compile Include="Biometric\BiometricSamplePurpose.cs" />
+    <Compile Include="Biometric\BiometricSampleTypes.cs" />
+    <Compile Include="Credentials\CredentialType.cs" />
+    <Compile Include="Fingerprints\FingerprintEnrollmentData.cs" />
+    <Compile Include="Fingerprints\FingerPosition.cs" />
+    <Compile Include="Credentials\ICredential.cs" />
+    <Compile Include="Core\DataObject.cs" />
+    <Compile Include="LiveQuestion\LiveAnswer.cs" />
+    <Compile Include="LiveQuestion\LiveQuestion.cs" />
+    <Compile Include="LiveQuestion\LiveQuestionType.cs" />
+    <Compile Include="Core\ServiceBase.cs" />
+    <Compile Include="Services\EnrollmentService.cs" />
+    <Compile Include="Core\Ticket.cs" />
+    <Compile Include="Core\UserName.cs" />
+    <Compile Include="Core\UserNameFormat.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\SecretService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net45+wp80+win8+wpa81+aspnetcore50\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

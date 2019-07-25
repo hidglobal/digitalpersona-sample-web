@@ -1,0 +1,23 @@
+﻿<Application x:Class="DPWebDemo.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:System="clr-namespace:System;assembly=mscorlib"
+    
+        xmlns:services="clr-namespace:DPWebDemo.Services;assembly=DPWebDemo.Services"
+        StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="Button">
+            <Setter Property="MinWidth" Value="80" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Margin" Value="3"></Setter>
+        </Style>
+        <ObjectDataProvider x:Key="CredentialTypesDataProvider" MethodName="GetValues" ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="services:CredentialType" />
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+
+    </Application.Resources>
+</Application>
