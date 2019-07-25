@@ -1,0 +1,6 @@
+name: DIGITALPERSONA WEB SAMPLE APPLICATION
+shortName: DPAM Web Sample
+git: 'https://github.com/hidglobal'
+repo: digitalpersona-sample-web
+package: '@digitalpersona/dotnet'
+api: dotnet
