@@ -10,9 +10,7 @@ nav_order: 1
 
 The sample program (DPWebDemo.exe) creates a GUI displaying fields and buttons that showcase the primary features of the DigitalPersona Web Enrollment Services API.  
 
-In order to conserve space in this document and make it more readable, screenshots of the GUI are limited to the section of the window under discussion in the text.  
-
-We will begin with the second tab in the UI, *Enrollment*, since generally speaking you will need to first enroll credentials before you can use them for authentication or identification functions on the first tab.  
+We will begin by describing the second tab in the UI, *Enrollment*, since generally speaking you will need to first enroll credentials before you can use them for authentication or identification functions on the first tab.  
 
 Although the sample program will function when the associated DigitalPersona Web Enrollment components are installed on either a DigitalPersona LDS Server or DigitalPersona AD Server, the Create User and Delete User elements only work for a DigitalPersona LDS Server.  
 
