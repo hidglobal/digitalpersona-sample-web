@@ -6,7 +6,7 @@ nav_order: 1
 ---
 {% include header.html %}
 
-# Overview (TEST-Index.md)
+# Overview
 
 The sample program (DPWebDemo.exe) creates a GUI displaying fields and buttons that showcase the primary features of the DigitalPersona Web Enrollment Services API.  
 
